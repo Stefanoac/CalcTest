@@ -3,11 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.TaxaJuros", "API.TaxaJuros\API.TaxaJuros.csproj", "{EFC49005-1799-4388-8825-11C3BC74E22E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.InterestRate", "API.TaxaJuros\API.InterestRate.csproj", "{EFC49005-1799-4388-8825-11C3BC74E22E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{BC960507-1BE1-4516-85A8-07D44E8EF6D4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{74A0CF18-656B-49F6-AFAD-EE85FF367EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.CompoundInterest", "API.CompoundInterest\API.CompoundInterest.csproj", "{1D2681D0-1674-4E45-9B0C-504E30A5CDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{CC3B36F2-6BC0-4B85-AB82-2A00D28FAB54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{068FE5D9-5B5E-4513-95E7-BF3336CE42A8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.editorconfig = ..\..\.editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +36,14 @@ Global
 		{74A0CF18-656B-49F6-AFAD-EE85FF367EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74A0CF18-656B-49F6-AFAD-EE85FF367EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74A0CF18-656B-49F6-AFAD-EE85FF367EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D2681D0-1674-4E45-9B0C-504E30A5CDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2681D0-1674-4E45-9B0C-504E30A5CDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2681D0-1674-4E45-9B0C-504E30A5CDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2681D0-1674-4E45-9B0C-504E30A5CDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3B36F2-6BC0-4B85-AB82-2A00D28FAB54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3B36F2-6BC0-4B85-AB82-2A00D28FAB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3B36F2-6BC0-4B85-AB82-2A00D28FAB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3B36F2-6BC0-4B85-AB82-2A00D28FAB54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

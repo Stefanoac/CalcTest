@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>API.TaxaJuros</AssemblyName>
+    <AssemblyName>API.InterestRate</AssemblyName>
+    <RootNamespace>API.InterestRate</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

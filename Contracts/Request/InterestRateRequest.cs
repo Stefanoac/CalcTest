@@ -3,7 +3,7 @@
 namespace Contracts.Request
 {
     [DataContract]
-    public class TaxaJurosRequest
+    public class InterestRateRequest
     {
         //TODO: Criar a classe de request
     }

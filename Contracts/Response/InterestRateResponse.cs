@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Contracts.Response
 {
-    public class TaxajurosResponse
+    public class InterestRateResponse
     {
-        public double TaxaJuros { get; set; }
+        public double InterestRate { get; set; }
     }
 }
