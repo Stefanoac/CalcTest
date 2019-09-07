@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.InterestRate", "API.TaxaJuros\API.InterestRate.csproj", "{EFC49005-1799-4388-8825-11C3BC74E22E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.InterestRate", "API.InterestRate\API.InterestRate.csproj", "{EFC49005-1799-4388-8825-11C3BC74E22E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{BC960507-1BE1-4516-85A8-07D44E8EF6D4}"
 EndProject
