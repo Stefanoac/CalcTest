@@ -23,20 +23,15 @@ namespace API.CompoundInterest.Controllers
 
         // GET api/values
         [HttpGet]
-        public IActionResult Get(decimal valorinicial, int meses)
+        public decimal Get(decimal valorinicial, int meses)
         {
-            if (!this.ModelState.IsValid)
-            {
-                return this.BadRequest(); 
-            }
-
             try
             {
                 var rate = this.GetRate();
 
                 var value = this.repository.Get(valorinicial, rate, meses);
 
-                return this.Ok();
+                return value;
             }
             catch (Exception ex)
             {

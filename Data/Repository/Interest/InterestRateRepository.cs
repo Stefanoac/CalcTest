@@ -1,6 +1,6 @@
 using Contracts.Interest;
 
-namespace Domain.Repository
+namespace Domain.Repository.Interest
 {
     public class InterestRateRepository : IInterestRateRepository
     {

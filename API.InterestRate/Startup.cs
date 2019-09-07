@@ -1,5 +1,5 @@
 using Contracts.Interest;
-using Domain.Repository;
+using Domain.Repository.Interest;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

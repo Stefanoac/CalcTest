@@ -4,7 +4,7 @@ using System.Text;
 using Contracts.Interest;
 using Domain.Model;
 
-namespace Data.Repository
+namespace Data.Repository.Interest
 {
     public class CompoundInterestRepository : ICompoundInterestRepository
     {
