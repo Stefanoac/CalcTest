@@ -1,10 +1,10 @@
 using System;
 using Xunit;
-using model = CalcTest.Data.Model;
+using CalcTest.Data.Model;
 
-namespace CalcTest.CompoundRate.Test
+namespace CalcTest.Test.Data
 {
-    public class CompoundInterestTest
+    public class DataTest
     {
         private const double Rate = 0.01;
 
@@ -14,7 +14,7 @@ namespace CalcTest.CompoundRate.Test
             var value = decimal.MaxValue;
             var months = 5;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Throws<OverflowException>(() => compoundInterest.ReturnValue);
         }
@@ -25,7 +25,7 @@ namespace CalcTest.CompoundRate.Test
             decimal value = 100;
             var months = 5;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Equal(105.10M, compoundInterest.ReturnValue);
         }
@@ -36,7 +36,7 @@ namespace CalcTest.CompoundRate.Test
             decimal value = 0;
             var months = 5;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Throws<Exception>(() => compoundInterest.ReturnValue);
         }
@@ -47,7 +47,7 @@ namespace CalcTest.CompoundRate.Test
             decimal value = -100;
             var months = 5;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Throws<Exception>(() => compoundInterest.ReturnValue);
         }
@@ -58,7 +58,7 @@ namespace CalcTest.CompoundRate.Test
             decimal value = 100;
             var months = 0;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Throws<Exception>(() => compoundInterest.ReturnValue);
         }
@@ -69,7 +69,7 @@ namespace CalcTest.CompoundRate.Test
             decimal value = 100;
             var months = -5;
 
-            var compoundInterest = new model.CompoundRate(value, Rate, months);
+            var compoundInterest = new CompoundRate(value, Rate, months);
 
             Assert.Throws<Exception>(() => compoundInterest.ReturnValue);
         }

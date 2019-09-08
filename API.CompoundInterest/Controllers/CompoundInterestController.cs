@@ -23,15 +23,20 @@ namespace CalcTest.CompoundInterest.Controllers
 
         // GET api/values
         [HttpGet]
-        public decimal Get(decimal valorinicial, int meses)
+        public IActionResult Get(decimal valorinicial, int meses)
         {
             try
             {
+                if (!this.ModelState.IsValid || valorinicial <= 0 || meses <= 0)
+                {
+                    return this.BadRequest();
+                }
+
                 var rate = this.GetRate();
 
                 var value = this.repository.Get(valorinicial, rate, meses);
 
-                return value;
+                return this.Ok(value);
             }
             catch (Exception ex)
             {
@@ -42,10 +47,9 @@ namespace CalcTest.CompoundInterest.Controllers
 
         private double GetRate()
         {
-            var url = this.configuration.GetValue<string>("InterestRateService:0:Url");
+            var url = this.configuration.GetSection("InterestRateService").GetSection("Url").Value;
 
-            // chamar api1 - restsharp para epgar o valor da taxa de juros
-            var client = new RestClient(url); // TODO: COLOCA ENDEREÇO NO APP SETTINGS
+            var client = new RestClient(url);
             var request = new RestRequest("taxaJuros", Method.GET);
 
             // execute the request

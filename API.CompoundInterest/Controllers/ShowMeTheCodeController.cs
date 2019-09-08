@@ -14,10 +14,10 @@ namespace CalcTest.CompoundInterest.Controllers
             this.repository = repository;
         }
 
-        public string Get(decimal valorinicial, int meses)
+        [HttpGet]
+        public string Get()
         {
             var githubRepository = this.repository.Get();
-
             return githubRepository;
         }
     }

@@ -1,5 +1,7 @@
 using CalcTest.Contracts.Interest;
+using CalcTest.Contracts.Showmethecode;
 using CalcTest.Data.Repository.Interest;
+using CalcTest.Data.Repository.Showmethecode;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +15,7 @@ namespace API.CompoundInterest
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            this.Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -22,6 +24,7 @@ namespace API.CompoundInterest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ICompoundInterestRepository, CompoundInterestRepository>();
+            services.AddTransient<IShowmethecodeRepository, ShowmethecodeRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
