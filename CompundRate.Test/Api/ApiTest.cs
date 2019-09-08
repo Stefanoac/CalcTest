@@ -10,21 +10,6 @@ namespace CalcTest.Test.Api
         private const double Rate = 0.01;
 
         [Fact]
-        public void Value_Overflow()
-        {
-            var client = new RestClient(Endpoint);
-            var request = new RestRequest("calculajuros", Method.GET);
-
-            request.AddParameter("valorinicial", decimal.MaxValue);
-            request.AddParameter("meses", 5);
-
-            // execute the request
-            var response = client.Execute(request);
-
-            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
-        }
-
-        [Fact]
         public void Value_Ok()
         {
             var client = new RestClient(Endpoint);

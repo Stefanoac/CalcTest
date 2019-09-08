@@ -40,7 +40,6 @@ namespace CalcTest.CompoundInterest.Controllers
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
