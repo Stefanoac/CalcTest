@@ -20,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Contracts\CalcTest.Contracts.csproj" />
-    <ProjectReference Include="..\Data\CalcTest.Data.csproj" />
+    <ProjectReference Include="..\CalcTest.Contracts\CalcTest.Contracts.csproj" />
+    <ProjectReference Include="..\CalcTest.Data\CalcTest.Data.csproj" />
   </ItemGroup>
 
 </Project>
