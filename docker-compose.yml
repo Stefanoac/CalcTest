@@ -1,0 +1,16 @@
+version: '3'
+services:
+  InterestRate:
+    image: calctestinterestrate:latest
+    build:
+      context: .
+      dockerfile: CalcTest.InterestRate/Dockerfile
+    ports:
+      - "5176:80"
+  CompoundInterest:
+    image: calctestcompoundinterest:latest 
+    build:
+      context: .
+      dockerfile: CalcTest.CompoundInterest/Dockerfile
+    ports:
+      - "3003:80"

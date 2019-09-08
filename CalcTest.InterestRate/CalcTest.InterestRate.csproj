@@ -1,9 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>API.InterestRate</AssemblyName>
-    <RootNamespace>API.InterestRate</RootNamespace>
+    <AssemblyName>CalcTest.InterestRate</AssemblyName>
+    <RootNamespace>CalcTest.InterestRate</RootNamespace>
     <UserSecretsId>99866a26-1337-478a-8171-ebea1ede19e4</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>

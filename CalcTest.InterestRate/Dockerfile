@@ -5,12 +5,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["API.InterestRate/CalcTest.InterestRate.csproj", "API.InterestRate/"]
-COPY ["Contracts/CalcTest.Contracts.csproj", "Contracts/"]
-COPY ["Data/CalcTest.Data.csproj", "Data/"]
-RUN dotnet restore "API.InterestRate/CalcTest.InterestRate.csproj"
+COPY ["CalcTest.InterestRate/CalcTest.InterestRate.csproj", "CalcTest.InterestRate/"]
+COPY ["CalcTest.Data/CalcTest.Data.csproj", "CalcTest.Data/"]
+COPY ["CalcTest.Contracts/CalcTest.Contracts.csproj", "CalcTest.Contracts/"]
+RUN dotnet restore "CalcTest.InterestRate/CalcTest.InterestRate.csproj"
 COPY . .
-WORKDIR "/src/API.InterestRate"
+WORKDIR "/src/CalcTest.InterestRate"
 RUN dotnet build "CalcTest.InterestRate.csproj" -c Release -o /app
 
 FROM build AS publish
@@ -19,4 +19,4 @@ RUN dotnet publish "CalcTest.InterestRate.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "API.InterestRate.dll"]
+ENTRYPOINT ["dotnet", "CalcTest.InterestRate.dll"]

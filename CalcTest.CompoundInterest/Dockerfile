@@ -5,12 +5,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["API.CompoundInterest/CalcTest.CompoundInterest.csproj", "API.CompoundInterest/"]
-COPY ["Contracts/CalcTest.Contracts.csproj", "Contracts/"]
-COPY ["Data/CalcTest.Data.csproj", "Data/"]
-RUN dotnet restore "API.CompoundInterest/CalcTest.CompoundInterest.csproj"
+COPY ["CalcTest.CompoundInterest/CalcTest.CompoundInterest.csproj", "CalcTest.CompoundInterest/"]
+COPY ["CalcTest.Data/CalcTest.Data.csproj", "CalcTest.Data/"]
+COPY ["CalcTest.Contracts/CalcTest.Contracts.csproj", "CalcTest.Contracts/"]
+RUN dotnet restore "CalcTest.CompoundInterest/CalcTest.CompoundInterest.csproj"
 COPY . .
-WORKDIR "/src/API.CompoundInterest"
+WORKDIR "/src/CalcTest.CompoundInterest"
 RUN dotnet build "CalcTest.CompoundInterest.csproj" -c Release -o /app
 
 FROM build AS publish
