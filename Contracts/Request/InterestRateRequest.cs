@@ -1,6 +1,6 @@
-﻿using System.Runtime.Serialization;
+using System.Runtime.Serialization;
 
-namespace Contracts.Request
+namespace CalcTest.Contracts.Request
 {
     [DataContract]
     public class InterestRateRequest

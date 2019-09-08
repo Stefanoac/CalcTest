@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Response
+namespace CalcTest.Contracts.Response
 {
     public class InterestRateResponse
     {

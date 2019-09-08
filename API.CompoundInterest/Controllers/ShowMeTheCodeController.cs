@@ -1,7 +1,7 @@
-using Contracts.Showmethecode;
+using CalcTest.Contracts.Showmethecode;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.CompoundInterest.Controllers
+namespace CalcTest.CompoundInterest.Controllers
 {
     [Route("showmethecode")]
     [ApiController]

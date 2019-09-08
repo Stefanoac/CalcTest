@@ -1,4 +1,4 @@
-namespace Data.Repository.Showmethecode
+namespace CalcTest.Data.Repository.Showmethecode
 {
     public class ShowmethecodeRepository
     {

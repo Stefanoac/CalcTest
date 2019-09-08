@@ -1,6 +1,6 @@
-using Contracts.Interest;
+using CalcTest.Contracts.Interest;
 
-namespace Domain.Repository.Interest
+namespace CalcTest.Data.Repository.Interest
 {
     public class InterestRateRepository : IInterestRateRepository
     {

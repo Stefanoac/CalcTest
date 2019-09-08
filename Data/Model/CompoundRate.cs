@@ -1,6 +1,6 @@
 using System;
 
-namespace Domain.Model
+namespace CalcTest.Data.Model
 {
     public class CompoundRate
     {
