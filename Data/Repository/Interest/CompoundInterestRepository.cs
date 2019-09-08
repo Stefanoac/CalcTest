@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Contracts.Interest;
-using Domain.Model;
+using CalcTest.Contracts.Interest;
+using CalcTest.Data.Model;
 
-namespace Data.Repository.Interest
+namespace CalcTest.Data.Repository.Interest
 {
     public class CompoundInterestRepository : ICompoundInterestRepository
     {

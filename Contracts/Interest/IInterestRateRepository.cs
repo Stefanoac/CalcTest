@@ -1,4 +1,4 @@
-namespace Contracts.Interest
+namespace CalcTest.Contracts.Interest
 {
     public interface IInterestRateRepository
     {

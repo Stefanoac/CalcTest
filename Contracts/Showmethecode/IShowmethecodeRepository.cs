@@ -1,4 +1,4 @@
-namespace Contracts.Showmethecode
+namespace CalcTest.Contracts.Showmethecode
 {
     public interface IShowmethecodeRepository
     {

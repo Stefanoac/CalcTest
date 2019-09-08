@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Contracts.Interest
+namespace CalcTest.Contracts.Interest
 {
     public interface ICompoundInterestRepository
     {

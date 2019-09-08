@@ -1,7 +1,7 @@
-using Contracts.Interest;
+using CalcTest.Contracts.Interest;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.InterestRate.Controllers
+namespace CalcTest.InterestRate.Controllers
 {
     [Route("taxaJuros")]
     [ApiController]

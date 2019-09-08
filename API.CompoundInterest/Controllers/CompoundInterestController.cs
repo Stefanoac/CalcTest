@@ -1,12 +1,12 @@
 using System;
 using System.Globalization;
 using System.Net;
-using Contracts.Interest;
+using CalcTest.Contracts.Interest;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using RestSharp;
 
-namespace API.CompoundInterest.Controllers
+namespace CalcTest.CompoundInterest.Controllers
 {
     [Route("calculajuros")]
     [ApiController]

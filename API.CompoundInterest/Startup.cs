@@ -1,5 +1,5 @@
-using Contracts.Interest;
-using Data.Repository.Interest;
+using CalcTest.Contracts.Interest;
+using CalcTest.Data.Repository.Interest;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
