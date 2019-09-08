@@ -1,4 +1,4 @@
-# CalcTest
+# SoftPlan - Prova de teste de juros compostos
 
 Tecnologias utilizadas:
 
